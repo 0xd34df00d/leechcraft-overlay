@@ -13,13 +13,10 @@ IUSE="debug postgres +sqlite"
 
 DEPEND="
 	~app-leechcraft/lc-core-${PV}[postgres?]
-	dev-qt/qtnetwork:5
-	dev-qt/qtprintsupport:5
-	dev-qt/qtsql:5
-	dev-qt/qtwidgets:5
-	dev-qt/qtxml:5"
+	dev-qt/qtbase:6[cups,network,sql,widgets,xml]
+"
 RDEPEND="${DEPEND}
-	dev-qt/qtsql:5[postgres?,sqlite?]
+	dev-qt/qtbase:6[postgres?,sqlite?]
 	virtual/leechcraft-downloader-http
 "
 
