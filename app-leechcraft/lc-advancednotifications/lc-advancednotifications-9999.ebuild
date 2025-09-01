@@ -12,7 +12,7 @@ KEYWORDS=""
 IUSE="debug"
 
 DEPEND="~app-leechcraft/lc-core-${PV}
-	dev-qt/qtdeclarative:5"
+	dev-qt/qtdeclarative:6[widgets]"
 RDEPEND="${DEPEND}"
 
 pkg_postinst() {
