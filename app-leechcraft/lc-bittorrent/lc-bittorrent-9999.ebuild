@@ -13,8 +13,6 @@ IUSE="debug geoip"
 
 DEPEND="
 	~app-leechcraft/lc-core-${PV}
-	dev-qt/qtwidgets:5
-	dev-qt/qtxml:5
 	net-libs/libtorrent-rasterbar:=
 	geoip? ( dev-libs/libmaxminddb:= )
 "
