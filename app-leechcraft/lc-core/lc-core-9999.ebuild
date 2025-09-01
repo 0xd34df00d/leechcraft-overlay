@@ -21,7 +21,6 @@ DEPEND="
 	dev-qt/qtdeclarative:5
 	dev-qt/qtgui:5
 	dev-qt/qtnetwork:5[ssl]
-	dev-qt/qtscript:5
 	dev-qt/qtsql:5
 	dev-qt/qtwidgets:5
 	dev-qt/qtx11extras:5
