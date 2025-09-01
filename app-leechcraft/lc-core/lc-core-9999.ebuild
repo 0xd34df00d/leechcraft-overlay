@@ -15,28 +15,20 @@ IUSE="debug doc postgres +qwt"
 
 DEPEND="
 	dev-libs/boost:=
-	dev-qt/qtconcurrent:5
-	dev-qt/qtcore:5
-	dev-qt/qtdbus:5
-	dev-qt/qtdeclarative:5
-	dev-qt/qtgui:5
-	dev-qt/qtnetwork:5[ssl]
-	dev-qt/qtsql:5
-	dev-qt/qtwidgets:5
-	dev-qt/qtx11extras:5
-	dev-qt/qtxml:5
-	qwt? ( x11-libs/qwt:6 )
+	dev-qt/qtbase:6[concurrent,dbus,gui,network,ssl,sql,widgets,xml]
+	dev-qt/qtdeclarative:6[widgets]
+	qwt? ( x11-libs/qwt:6[qt6] )
 "
 RDEPEND="${DEPEND}
-	dev-qt/qtsql:5[postgres?,sqlite]
-	dev-qt/qtsvg:5
+	dev-qt/qtbase:6[postgres?,sqlite]
+	dev-qt/qtsvg:6
 	|| (
 		kde-frameworks/oxygen-icons
 		x11-themes/kfaenza
 	)
 "
 BDEPEND="
-	dev-qt/linguist-tools:5
+	dev-qt/qttools:6[linguist]
 	doc? ( app-text/doxygen )
 "
 
