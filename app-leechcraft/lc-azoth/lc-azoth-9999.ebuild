@@ -18,29 +18,20 @@ REQUIRED_USE="|| ( standardstyles adiumstyles )"
 
 COMMON_DEPEND="
 	~app-leechcraft/lc-core-${PV}
-	dev-qt/qtconcurrent:5
-	dev-qt/qtdbus:5
-	dev-qt/qtnetwork:5
-	dev-qt/qtsql:5
-	dev-qt/qtwebengine:5
-	dev-qt/qtxml:5
-	autoidler? (
-		dev-qt/qtx11extras:5
-		x11-libs/libXScrnSaver
-	)
-	crypt? ( app-crypt/qca:2[qt5(+)] )
+	dev-qt/qtbase:6[concurrent,network,sql,xml]
+	dev-qt/qtwebengine:6[widgets]
+	autoidler? ( x11-libs/libXScrnSaver )
+	crypt? ( app-crypt/qca:2 )
 	otroid? ( net-libs/libotr )
 	sarin? ( net-libs/tox:= )
-	xmpp? (
-		>=net-libs/qxmpp-1.2.0
-	)
+	xmpp? ( >=net-libs/qxmpp-1.2.0 )
 	xtazy? ( ~app-leechcraft/lc-xtazy-${PV} )
 "
 DEPEND="${COMMON_DEPEND}
 	doc? ( app-text/doxygen[dot] )
 "
 RDEPEND="${COMMON_DEPEND}
-	dev-qt/qtsql:5[sqlite]
+	dev-qt/qtbase:6[sqlite]
 	crypt? ( app-crypt/qca:2[gpg] )
 	latex? (
 		virtual/imagemagick-tools
