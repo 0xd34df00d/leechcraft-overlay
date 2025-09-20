@@ -24,7 +24,7 @@ COMMON_DEPEND="
 	crypt? ( app-crypt/qca:2 )
 	otroid? ( net-libs/libotr )
 	sarin? ( net-libs/tox:= )
-	xmpp? ( >=net-libs/qxmpp-1.2.0 )
+	xmpp? ( >=net-libs/qxmpp-1.10.0 )
 	xtazy? ( ~app-leechcraft/lc-xtazy-${PV} )
 "
 DEPEND="${COMMON_DEPEND}
