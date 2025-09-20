@@ -31,7 +31,6 @@ COMMON_DEPEND="
 	crypt? ( app-crypt/qca:2[qt5(+)] )
 	otroid? ( net-libs/libotr )
 	sarin? ( net-libs/tox:= )
-	woodpecker? ( dev-libs/kqoauth )
 	xmpp? (
 		>=net-libs/qxmpp-1.2.0
 	)
@@ -80,7 +79,6 @@ src_configure() {
 		-DENABLE_AZOTH_STANDARDSTYLES=$(usex standardstyles)
 		-DENABLE_AZOTH_VADER=$(usex vader)
 		-DENABLE_AZOTH_VELVETBIRD=$(usex velvetbird)
-		-DENABLE_AZOTH_WOODPECKER=$(usex woodpecker)
 		-DENABLE_AZOTH_XOOX=$(usex xmpp)
 		-DENABLE_AZOTH_XTAZY=$(usex xtazy)
 	)
