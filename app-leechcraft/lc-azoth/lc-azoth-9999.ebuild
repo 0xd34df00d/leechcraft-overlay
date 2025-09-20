@@ -18,6 +18,7 @@ REQUIRED_USE="|| ( standardstyles adiumstyles )"
 
 COMMON_DEPEND="
 	~app-leechcraft/lc-core-${PV}
+	dev-qt/qtconcurrent:5
 	dev-qt/qtdbus:5
 	dev-qt/qtnetwork:5
 	dev-qt/qtsql:5
@@ -28,15 +29,8 @@ COMMON_DEPEND="
 		x11-libs/libXScrnSaver
 	)
 	crypt? ( app-crypt/qca:2[qt5(+)] )
-	lastseen? ( dev-qt/qtconcurrent:5 )
-	otroid? (
-		dev-qt/qtconcurrent:5
-		net-libs/libotr
-	)
-	sarin? (
-		dev-qt/qtconcurrent:5
-		net-libs/tox:=
-	)
+	otroid? ( net-libs/libotr )
+	sarin? ( net-libs/tox:= )
 	woodpecker? ( dev-libs/kqoauth )
 	xmpp? (
 		>=net-libs/qxmpp-1.2.0
