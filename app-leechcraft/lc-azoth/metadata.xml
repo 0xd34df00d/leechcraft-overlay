@@ -31,6 +31,7 @@
 		<flag name="sarin">Build Sarin, Tox protocol support module. Please add mva overlay to use <pkg>net-libs/tox</pkg></flag>
 		<flag name="shx">Build shell command executor plugin</flag>
 		<flag name="standardstyles">Build support for standard Azoth styles engine</flag>
+		<flag name="tracolor">Build color-indicating contacts activity tracker</flag>
 		<flag name="velvetbird">Build support for protocols provided by libpurple</flag>
 		<flag name="woodpecker">Build Woodpecker, the Twitter client plugin</flag>
 		<flag name="xtazy">Build Xtazy for publishing currently playing tune</flag>
