@@ -12,7 +12,7 @@ KEYWORDS=""
 IUSE="debug doc +abbrev +acetamide +adiumstyles +autoidler +autopaste +birthdaynotifier
 	+chathistory +crypt +depester +embedmedia +herbicide +hili +isterique
 	+keeso +lastseen +latex +metacontacts +murm +nativeemoticons +otroid sarin
-	shx +spell +standardstyles +vader velvetbird +woodpecker +xmpp +xtazy"
+	shx +spell +standardstyles velvetbird +woodpecker +xmpp +xtazy"
 
 REQUIRED_USE="|| ( standardstyles adiumstyles )"
 
@@ -68,7 +68,6 @@ src_configure() {
 		-DENABLE_AZOTH_SHX=$(usex shx)
 		-DENABLE_AZOTH_ROSENTHAL=$(usex spell)
 		-DENABLE_AZOTH_STANDARDSTYLES=$(usex standardstyles)
-		-DENABLE_AZOTH_VADER=$(usex vader)
 		-DENABLE_AZOTH_VELVETBIRD=$(usex velvetbird)
 		-DENABLE_AZOTH_XOOX=$(usex xmpp)
 		-DENABLE_AZOTH_XTAZY=$(usex xtazy)
