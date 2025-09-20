@@ -10,7 +10,7 @@ DESCRIPTION="Azoth, the modular IM client for LeechCraft"
 SLOT="0"
 KEYWORDS=""
 IUSE="debug doc +abbrev +acetamide +adiumstyles +autoidler +autopaste +birthdaynotifier
-	+chathistory +crypt +depester +embedmedia +herbicide +hili +isterique +juick
+	+chathistory +crypt +depester +embedmedia +herbicide +hili +isterique
 	+keeso +lastseen +latex +metacontacts +murm +nativeemoticons +otroid sarin
 	shx +spell +standardstyles +vader velvetbird +woodpecker +xmpp +xtazy"
 
@@ -56,7 +56,6 @@ src_configure() {
 		-DENABLE_AZOTH_HERBICIDE=$(usex herbicide)
 		-DENABLE_AZOTH_HILI=$(usex hili)
 		-DENABLE_AZOTH_ISTERIQUE=$(usex isterique)
-		-DENABLE_AZOTH_JUICK=$(usex juick)
 		-DENABLE_AZOTH_KEESO=$(usex keeso)
 		-DENABLE_AZOTH_LASTSEEN=$(usex lastseen)
 		-DENABLE_AZOTH_MODNOK=$(usex latex)
