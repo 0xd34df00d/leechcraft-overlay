@@ -37,7 +37,7 @@ COMMON_DEPEND="
 	xtazy? ( ~app-leechcraft/lc-xtazy-${PV} )
 "
 DEPEND="${COMMON_DEPEND}
-	doc? ( app-doc/doxygen[dot] )
+	doc? ( app-text/doxygen[dot] )
 "
 RDEPEND="${COMMON_DEPEND}
 	dev-qt/qtsql:5[sqlite]
