@@ -9,7 +9,7 @@ DESCRIPTION="Azoth, the modular IM client for LeechCraft"
 
 SLOT="0"
 KEYWORDS=""
-IUSE="debug doc +acetamide +adiumstyles +autoidler +autopaste +birthdaynotifier
+IUSE="debug doc +abbrev +acetamide +adiumstyles +autoidler +autopaste +birthdaynotifier
 	+chathistory +crypt +depester +embedmedia +herbicide +hili +isterique +juick
 	+keeso +lastseen +latex +metacontacts +murm +nativeemoticons +otroid sarin
 	shx +spell +standardstyles +vader velvetbird +woodpecker +xmpp +xtazy"
@@ -44,6 +44,7 @@ src_configure() {
 	local mycmakeargs=(
 		-DENABLE_CRYPT=$(usex crypt)
 		-DWITH_DOCS=$(usex doc)
+		-DENABLE_AZOTH_ABBREV=$(usex abbrev)
 		-DENABLE_AZOTH_ACETAMIDE=$(usex acetamide)
 		-DENABLE_AZOTH_ADIUMSTYLES=$(usex adiumstyles)
 		-DENABLE_AZOTH_AUTOIDLER=$(usex autoidler)

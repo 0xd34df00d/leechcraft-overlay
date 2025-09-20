@@ -10,6 +10,7 @@
 		<name>Proxy Maintainers</name>
 	</maintainer>
 	<use>
+		<flag name="abbrev">Build Abbrev for supporting abbreviations</flag>
 		<flag name="acetamide">Build Acetamide, the IRC protocol support</flag>
 		<flag name="adiumstyles">Build support for Adium styles</flag>
 		<flag name="autoidler">Build support for automatic status changing according to user idle time</flag>
