@@ -13,19 +13,10 @@ IUSE="debug +deathnote +rappor +spegnersi +vangog"
 
 DEPEND="
 	~app-leechcraft/lc-core-${PV}
-	dev-qt/qtdeclarative:5
-	dev-qt/qtnetwork:5
-	dev-qt/qtwidgets:5
-	rappor? ( dev-qt/qtxml:5 )
-	deathnote? (
-		dev-qt/qtxml:5
-		dev-qt/qtxmlpatterns:5
-	)
-	spegnersi? (
-		dev-libs/kqoauth
-		dev-qt/qtxml:5
-	)
-	vangog? ( dev-qt/qtxml:5 )"
+	dev-qt/qtbase:6[network,widgets,xml]
+	dev-qt/qtdeclarative:6[widgets]
+	spegnersi? ( dev-qt/qtnetworkauth:6 )
+	"
 RDEPEND="${DEPEND}"
 
 src_configure() {
