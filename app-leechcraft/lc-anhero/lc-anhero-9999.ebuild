@@ -13,7 +13,7 @@ IUSE="debug"
 
 DEPEND="~app-leechcraft/lc-core-${PV}"
 RDEPEND="${DEPEND}
-	sys-devel/gdb
+	dev-debug/gdb
 "
 
 src_configure() {
