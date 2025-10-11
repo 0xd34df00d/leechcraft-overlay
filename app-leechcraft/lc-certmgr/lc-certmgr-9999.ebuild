@@ -13,7 +13,6 @@ IUSE="debug"
 
 DEPEND="
 	~app-leechcraft/lc-core-${PV}
-	dev-qt/qtnetwork:5[ssl]
-	dev-qt/qtwidgets:5
+	dev-qt/qtbase:6[network,ssl,widgets]
 "
 RDEPEND="${DEPEND}"
