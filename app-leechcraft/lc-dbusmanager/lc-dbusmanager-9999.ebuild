@@ -13,6 +13,6 @@ IUSE="debug"
 
 DEPEND="
 	~app-leechcraft/lc-core-${PV}
-	dev-qt/qtdbus:5
+	dev-qt/qtbase:6[gui,dbus]
 "
 RDEPEND="${DEPEND}"
