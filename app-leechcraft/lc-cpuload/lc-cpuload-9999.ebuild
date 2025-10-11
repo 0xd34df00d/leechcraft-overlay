@@ -13,7 +13,7 @@ IUSE="debug"
 
 DEPEND="
 	~app-leechcraft/lc-core-${PV}
-	dev-qt/qtdeclarative:5
+	dev-qt/qtdeclarative:6
 "
 RDEPEND="${DEPEND}
 	virtual/leechcraft-quark-sideprovider
