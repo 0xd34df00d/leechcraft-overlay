@@ -13,17 +13,12 @@ IUSE="debug +metida +hestia"
 
 DEPEND="
 	~app-leechcraft/lc-core-${PV}
-	dev-qt/qtdeclarative:5
-	dev-qt/qtprintsupport:5
-	dev-qt/qtsql:5
-	dev-qt/qtxml:5
-	metida? (
-		dev-qt/qtnetwork:5
-		dev-qt/qtxmlpatterns:5
-	)
+	dev-qt/qtbase:6[cups,sql,xml]
+	dev-qt/qtdeclarative:6[widgets]
+	metida? ( dev-qt/qtbase:6[network] )
 "
 RDEPEND="${DEPEND}
-	dev-qt/qtsql:5[sqlite]
+	dev-qt/qtbase:6[sqlite]
 	virtual/leechcraft-wysiwyg-editor
 "
 
