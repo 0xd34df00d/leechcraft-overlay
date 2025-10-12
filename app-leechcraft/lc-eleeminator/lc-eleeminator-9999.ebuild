@@ -12,7 +12,7 @@ KEYWORDS=""
 IUSE="debug"
 
 DEPEND="~app-leechcraft/lc-core-${PV}
-	dev-qt/qtwidgets:5
+	dev-qt/qtbase:6[widgets]
 	x11-libs/qtermwidget:=
 "
 RDEPEND="${DEPEND}"
