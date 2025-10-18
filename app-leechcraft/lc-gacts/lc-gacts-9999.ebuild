@@ -12,6 +12,7 @@ KEYWORDS=""
 IUSE="debug"
 
 DEPEND="~app-leechcraft/lc-core-${PV}
-	dev-qt/qtbase:6[widgets]
+	dev-qt/qtbase:6[gui]
+	x11-libs/libX11
 "
 RDEPEND="${DEPEND}"
