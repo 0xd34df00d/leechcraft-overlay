@@ -19,7 +19,7 @@ RDEPEND="${DEPEND}"
 pkg_postinst() {
 	elog "fenet supports the following in addition to what's installed:"
 	optfeature "awesome window manager" x11-wm/awesome
-	optfeature "kwin window manager" kde-plasma/kwin
+	optfeature "kwin window manager" kde-plasma/kwin-x11
 	optfeature "openbox window manager" x11-wm/openbox
 	optfeature "picom compositor" x11-misc/picom
 }
