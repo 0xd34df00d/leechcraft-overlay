@@ -21,5 +21,5 @@ pkg_postinst() {
 	optfeature "awesome window manager" x11-wm/awesome
 	optfeature "kwin window manager" kde-plasma/kwin
 	optfeature "openbox window manager" x11-wm/openbox
-	optfeature "compton compositor" x11-misc/compton
+	optfeature "picom compositor" x11-misc/picom
 }
