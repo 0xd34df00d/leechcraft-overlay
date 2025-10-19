@@ -12,12 +12,9 @@ KEYWORDS=""
 IUSE="debug"
 
 DEPEND="~app-leechcraft/lc-core-${PV}
-	dev-qt/qtconcurrent:5
-	dev-qt/qtnetwork:5
-	dev-qt/qtsql:5
-	dev-qt/qtwidgets:5
+	dev-qt/qtbase:6[concurrent,gui,sql]
 "
 RDEPEND="${DEPEND}
-	dev-qt/qtsql:5[sqlite]
+	dev-qt/qtbase:6[sqlite]
 	~virtual/leechcraft-search-show-${PV}
 "
