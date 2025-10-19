@@ -12,10 +12,8 @@ KEYWORDS=""
 IUSE="debug +notify quark"
 
 DEPEND="~app-leechcraft/lc-core-${PV}
-	dev-qt/qtdeclarative:5[widgets]
-	dev-qt/qtnetwork:5
-	dev-qt/qtwidgets:5
-	dev-qt/qtxml:5
+	dev-qt/qtbase:6[network,xml]
+	dev-qt/qtdeclarative:6[widgets]
 "
 RDEPEND="${DEPEND}
 	quark? ( ~virtual/leechcraft-quark-sideprovider-${PV} )
