@@ -12,7 +12,6 @@ KEYWORDS=""
 IUSE="debug"
 
 DEPEND="~app-leechcraft/lc-core-${PV}
-	dev-qt/qtnetwork:5
-	dev-qt/qtwidgets:5
+	dev-qt/qtbase:6[network,widgets]
 "
 RDEPEND="${DEPEND}"
