@@ -12,9 +12,7 @@ KEYWORDS=""
 IUSE="debug"
 
 DEPEND="~app-leechcraft/lc-core-${PV}
-	dev-qt/qtdeclarative:5[widgets]
-	dev-qt/qtwidgets:5
-	dev-qt/qtx11extras:5
+	dev-qt/qtdeclarative:6[widgets]
 "
 RDEPEND="${DEPEND}
 	x11-apps/setxkbmap
