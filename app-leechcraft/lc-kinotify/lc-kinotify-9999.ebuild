@@ -11,5 +11,7 @@ SLOT="0"
 KEYWORDS=""
 IUSE="debug"
 
-DEPEND="~app-leechcraft/lc-core-${PV}"
+DEPEND="~app-leechcraft/lc-core-${PV}
+	dev-qt/qtscxml:6
+"
 RDEPEND="${DEPEND}"
