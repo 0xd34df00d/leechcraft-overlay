@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit leechcraft
+inherit leechcraft optfeature
 
 DESCRIPTION="CSTP, the clean & stupid HTTP implementation for LeechCraft"
 
@@ -14,5 +14,9 @@ IUSE="debug"
 DEPEND="~app-leechcraft/lc-core-${PV}
 	dev-qt/qtbase:6[network,widgets]
 "
-RDEPEND="${DEPEND}
-	virtual/leechcraft-task-show"
+RDEPEND="${DEPEND}"
+
+pkg_postinst() {
+	elog "Consider installing the following for additional features:"
+	optfeature "displaying and controlling the downloads" virtual/leechcraft-task-show
+}
