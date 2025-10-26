@@ -7,6 +7,7 @@
 # @AUTHOR:
 # 0xd34df00d@gmail.com
 # NightNord@niifaq.ru
+# @PROVIDES: cmake
 # @SUPPORTED_EAPIS: 6 7
 # @BLURB: Common functions and setup utilities for the LeechCraft app
 # @DESCRIPTION:
