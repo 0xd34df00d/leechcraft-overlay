@@ -16,9 +16,7 @@ DEPEND="
 	net-libs/libtorrent-rasterbar:=
 	geoip? ( dev-libs/libmaxminddb:= )
 "
-RDEPEND="${DEPEND}
-	virtual/leechcraft-task-show
-"
+RDEPEND="${DEPEND}"
 
 src_configure() {
 	local mycmakeargs=(
