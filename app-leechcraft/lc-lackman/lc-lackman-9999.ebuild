@@ -1,7 +1,7 @@
 # Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 inherit leechcraft
 
@@ -12,13 +12,9 @@ KEYWORDS=""
 IUSE="debug"
 
 DEPEND="~app-leechcraft/lc-core-${PV}
-	dev-qt/qtnetwork:5
-	dev-qt/qtsql:5
-	dev-qt/qtwidgets:5
-	dev-qt/qtxml:5
-	dev-qt/qtxmlpatterns:5
+	dev-qt/qtbase:6[network,sql,widgets,xml]
 "
 RDEPEND="${DEPEND}
-	dev-qt/qtsql:5[sqlite]
+	dev-qt/qtbase:6[sqlite]
 	~virtual/leechcraft-downloader-http-${PV}
 "
