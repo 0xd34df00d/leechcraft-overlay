@@ -13,6 +13,6 @@ IUSE="debug"
 
 DEPEND="~app-leechcraft/lc-core-${PV}
 	dev-qt/qtbase:6[gui,network,xml]
-	media-libs/liblastfm
+	>=media-libs/liblastfm-1.1.0_pre20250323
 "
 RDEPEND="${DEPEND}"
