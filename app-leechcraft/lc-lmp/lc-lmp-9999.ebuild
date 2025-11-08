@@ -1,7 +1,7 @@
 # Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 inherit xdg-utils leechcraft
 
@@ -13,21 +13,17 @@ IUSE="debug +fradj +graffiti +mpris +mtp +mp3tunes potorchu"
 
 DEPEND="
 	~app-leechcraft/lc-core-${PV}
-	dev-qt/qtconcurrent:5
-	dev-qt/qtdeclarative:5[widgets]
-	dev-qt/qtnetwork:5
-	dev-qt/qtsql:5
-	dev-qt/qtwidgets:5
-	dev-qt/qtxml:5
+	dev-qt/qtbase:6[concurrent,network,sql,xml]
+	dev-qt/qtdeclarative:6[widgets]
 	media-libs/gstreamer:1.0
 	media-libs/taglib
-	fradj? ( x11-libs/qwt:6 )
-	mpris? ( dev-qt/qtdbus:5 )
+	fradj? ( x11-libs/qwt[qt6] )
+	mpris? ( dev-qt/qtbase:6[dbus] )
 	mtp? ( media-libs/libmtp:= )
 	potorchu? ( media-libs/libprojectm:= )
 "
 RDEPEND="${DEPEND}
-	dev-qt/qtsql:5[sqlite]
+	dev-qt/qtbase:6[sqlite]
 	graffiti? ( media-libs/flac )
 	mtp? ( ~app-leechcraft/lc-devmon-${PV} )
 "
