@@ -11,6 +11,7 @@
 	</maintainer>
 	<use>
 		<flag name="brainslugz">Build BrainSlugz for querying MusicBrainz for music collection completeness and new releases</flag>
+		<flag name="dumbsync">Build DumbSync for syncing the collection with USB mass storage-based media players</flag>
 		<flag name="fradj">Build FrAdj, the equalizer effect module</flag>
 		<flag name="graffiti">Build media tags editor plugin</flag>
 		<flag name="mpris">Enable MPRIS support</flag>
