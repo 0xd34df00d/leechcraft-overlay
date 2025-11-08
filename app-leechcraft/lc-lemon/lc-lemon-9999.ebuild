@@ -1,7 +1,7 @@
 # Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 inherit leechcraft
 
@@ -13,9 +13,8 @@ IUSE="debug"
 
 DEPEND="~app-leechcraft/lc-core-${PV}
 	dev-libs/libnl:3
-	dev-qt/qtnetwork:5
-	dev-qt/qtwidgets:5
-	x11-libs/qwt:6
+	dev-qt/qtbase:6[network,widgets]
+	x11-libs/qwt[qt6]
 	"
 RDEPEND="${DEPEND}
 	~virtual/leechcraft-quark-sideprovider-${PV}"
