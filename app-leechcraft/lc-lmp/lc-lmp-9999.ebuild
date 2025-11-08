@@ -9,7 +9,7 @@ DESCRIPTION="LeechCraft Media Player, Phonon-based audio/video player"
 
 SLOT="0"
 KEYWORDS=""
-IUSE="debug +fradj +graffiti +mpris +mtp +mp3tunes potorchu"
+IUSE="debug +brainslugz +fradj +graffiti +mpris +mtp +mp3tunes potorchu"
 
 DEPEND="
 	~app-leechcraft/lc-core-${PV}
@@ -31,6 +31,7 @@ RDEPEND="${DEPEND}
 src_configure() {
 	local mycmakeargs=(
 		-DENABLE_LMP_LIBGUESS=OFF
+		-DENABLE_LMP_BRAINSLUGZ=$(usex brainslugz)
 		-DENABLE_LMP_FRADJ=$(usex fradj)
 		-DENABLE_LMP_GRAFFITI=$(usex graffiti)
 		-DENABLE_LMP_MP3TUNES=$(usex mp3tunes)
