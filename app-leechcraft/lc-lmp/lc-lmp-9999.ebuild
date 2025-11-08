@@ -30,7 +30,6 @@ RDEPEND="${DEPEND}
 
 src_configure() {
 	local mycmakeargs=(
-		-DENABLE_LMP_LIBGUESS=OFF
 		-DENABLE_LMP_BRAINSLUGZ=$(usex brainslugz)
 		-DENABLE_LMP_DUMBSYNC=$(usex dumbsync)
 		-DENABLE_LMP_FRADJ=$(usex fradj)
