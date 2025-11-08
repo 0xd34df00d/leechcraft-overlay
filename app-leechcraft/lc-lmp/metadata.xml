@@ -17,6 +17,7 @@
 		<flag name="httstream">Build HttStream for streaming music from LMP via HTTP</flag>
 		<flag name="mpris">Enable MPRIS support</flag>
 		<flag name="mp3tunes">Build plugin for supporting the mp3tunes.com music locker service</flag>
-		<flag name="potorchu"> Enable the projectM-based visualization effects module for LMP</flag>
+		<flag name="potorchu">Enable the projectM-based visualization effects module for LMP</flag>
+		<flag name="ppl">Enable Portable Player Logging support (for, say, syncing Rockbox logs with scrobbling services)</flag>
 	</use>
 </pkgmetadata>
