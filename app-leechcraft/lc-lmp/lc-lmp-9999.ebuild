@@ -9,7 +9,7 @@ DESCRIPTION="LeechCraft Media Player, Phonon-based audio/video player"
 
 SLOT="0"
 KEYWORDS=""
-IUSE="debug +brainslugz +dumbsync +fradj +graffiti +mpris +mtp +mp3tunes potorchu"
+IUSE="debug +brainslugz +dumbsync +fradj +graffiti +httstream +mpris +mtp +mp3tunes potorchu"
 
 DEPEND="
 	~app-leechcraft/lc-core-${PV}
@@ -35,6 +35,7 @@ src_configure() {
 		-DENABLE_LMP_DUMBSYNC=$(usex dumbsync)
 		-DENABLE_LMP_FRADJ=$(usex fradj)
 		-DENABLE_LMP_GRAFFITI=$(usex graffiti)
+		-DENABLE_LMP_HTTSTREAM=$(usex httstream)
 		-DENABLE_LMP_MP3TUNES=$(usex mp3tunes)
 		-DENABLE_LMP_MPRIS=$(usex mpris)
 		-DENABLE_LMP_MTPSYNC=$(usex mtp)
