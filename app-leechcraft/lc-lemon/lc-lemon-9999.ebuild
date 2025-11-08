@@ -19,11 +19,3 @@ DEPEND="~app-leechcraft/lc-core-${PV}
 	"
 RDEPEND="${DEPEND}
 	~virtual/leechcraft-quark-sideprovider-${PV}"
-
-pkg_postinst() {
-	if has_version 'dev-qt/qtnetwork:5[-connman,-networkmanager]'; then
-		ewarn "dev-qt/qtnetwork:5 was built without any bearer plugins, so detecting network"
-		ewarn "devices may be crippled. Consider enabling either 'connman' or 'networkmanager'"
-		ewarn "USE flags if that is a problem for you."
-	fi
-}
