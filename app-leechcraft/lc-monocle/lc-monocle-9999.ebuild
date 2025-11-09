@@ -30,11 +30,11 @@ BDEPEND="
 src_configure() {
 	local mycmakeargs=(
 		-DWITH_DOCS=$(usex doc)
-		-DENABLE_MONOCLE_SEEN=$(usex djvu)
-		-DENABLE_MONOCLE_FXB=$(usex fb2)
 		-DENABLE_MONOCLE_DIK=$(usex mobi)
+		-DENABLE_MONOCLE_FXB=$(usex fb2)
 		-DENABLE_MONOCLE_PDF=$(usex pdf)
 		-DENABLE_MONOCLE_POSTRUS=$(usex postscript)
+		-DENABLE_MONOCLE_SEEN=$(usex djvu)
 	)
 	cmake_src_configure
 }
