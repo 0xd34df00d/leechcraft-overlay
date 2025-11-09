@@ -10,7 +10,8 @@
 		<name>Proxy Maintainers</name>
 	</maintainer>
 	<use>
-		<flag name="fb2">Enable support for FictionBook format</flag>
-		<flag name="mobi">Enable support for MOBI format</flag>
+		<flag name="epub">Enable the EPUB format support</flag>
+		<flag name="fb2">Enable the FictionBook format support</flag>
+		<flag name="mobi">Enable the MOBI format support</flag>
 	</use>
 </pkgmetadata>

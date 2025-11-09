@@ -9,13 +9,14 @@ DESCRIPTION="Monocle, the modular document viewer for LeechCraft"
 
 SLOT="0"
 KEYWORDS=""
-IUSE="debug +djvu doc +fb2 +mobi +pdf +postscript"
+IUSE="debug +djvu doc +epub +fb2 +mobi +pdf +postscript"
 
 REQUIRED_USE="postscript? ( pdf )"
 
 DEPEND="~app-leechcraft/lc-core-${PV}
 	dev-qt/qtbase:6[concurrent,cups,sql,widgets,xml]
 	djvu? ( app-text/djvu )
+	epub? ( dev-libs/quazip )
 	pdf? ( app-text/poppler:= )
 "
 
@@ -30,6 +31,7 @@ BDEPEND="
 src_configure() {
 	local mycmakeargs=(
 		-DWITH_DOCS=$(usex doc)
+		-DENABLE_MONOCLE_BOOP=$(usex epub)
 		-DENABLE_MONOCLE_DIK=$(usex mobi)
 		-DENABLE_MONOCLE_FXB=$(usex fb2)
 		-DENABLE_MONOCLE_PDF=$(usex pdf)
