@@ -12,6 +12,7 @@ KEYWORDS=""
 IUSE="+dropbox +googledrive"
 
 DEPEND="~app-leechcraft/lc-core-${PV}
+	dev-libs/boost:=
 	dev-qt/qtbase:6[network,widgets]
 "
 RDEPEND="${DEPEND}"
