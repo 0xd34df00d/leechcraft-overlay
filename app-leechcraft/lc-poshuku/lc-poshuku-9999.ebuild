@@ -28,13 +28,13 @@ REQUIRED_USE="|| ( postgres sqlite )"
 
 src_configure() {
 	local mycmakeargs=(
+		-DENABLE_IDN=$(usex idn)
 		-DENABLE_POSHUKU_AUTOSEARCH=$(usex autosearch)
 		-DENABLE_POSHUKU_CLEANWEB=$(usex cleanweb)
 		-DENABLE_POSHUKU_DCAC=$(usex dcac)
 		-DENABLE_POSHUKU_FATAPE=$(usex fatape)
 		-DENABLE_POSHUKU_FILESCHEME=$(usex filescheme)
 		-DENABLE_POSHUKU_FUA=$(usex fua)
-		-DENABLE_IDN=$(usex idn)
 		-DENABLE_POSHUKU_KEYWORDS=$(usex keywords)
 		-DENABLE_POSHUKU_ONLINEBOOKMARKS=$(usex onlinebookmarks)
 		-DENABLE_POSHUKU_QRD=$(usex qrd)
