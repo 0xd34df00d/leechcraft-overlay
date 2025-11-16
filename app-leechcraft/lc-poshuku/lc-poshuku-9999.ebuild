@@ -1,7 +1,7 @@
 # Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 inherit leechcraft
 
@@ -13,18 +13,14 @@ IUSE="+autosearch debug +dcac +cleanweb +fatape +filescheme +foc +fua +idn +keyw
 postgres qrd +speeddial +sqlite +webengine"
 
 DEPEND="~app-leechcraft/lc-core-${PV}[postgres?]
-	dev-qt/qtnetwork:5
-	dev-qt/qtprintsupport:5
-	dev-qt/qtsql:5
-	dev-qt/qtwidgets:5
-	dev-qt/qtxml:5
-	cleanweb? ( dev-qt/qtconcurrent:5 )
+	dev-qt/qtbase:6[cups,network,sql,widgets,xml]
+	cleanweb? ( dev-qt/qtbase:6[concurrent] )
 	idn? ( net-dns/libidn:= )
 	qrd? ( media-gfx/qrencode:= )
-	webengine? ( dev-qt/qtwebengine:5 )
+	webengine? ( dev-qt/qtwebengine:6 )
 "
 RDEPEND="${DEPEND}
-	dev-qt/qtsql:5[postgres?,sqlite?]
+	dev-qt/qtbase:6[postgres?,sqlite?]
 	virtual/leechcraft-downloader-http
 "
 
