@@ -9,7 +9,7 @@ DESCRIPTION="Poshuku, the full-featured web browser plugin for LeechCraft"
 
 SLOT="0"
 KEYWORDS=""
-IUSE="+autosearch debug +dcac +cleanweb +fatape +filescheme +foc +fua +idn +keywords +onlinebookmarks
+IUSE="+autosearch debug +dcac +cleanweb +fatape +filescheme +fua +idn +keywords +onlinebookmarks
 postgres qrd +speeddial +sqlite +webengine"
 
 DEPEND="~app-leechcraft/lc-core-${PV}[postgres?]
@@ -33,7 +33,6 @@ src_configure() {
 		-DENABLE_POSHUKU_DCAC=$(usex dcac)
 		-DENABLE_POSHUKU_FATAPE=$(usex fatape)
 		-DENABLE_POSHUKU_FILESCHEME=$(usex filescheme)
-		-DENABLE_POSHUKU_FOC=$(usex foc)
 		-DENABLE_POSHUKU_FUA=$(usex fua)
 		-DENABLE_IDN=$(usex idn)
 		-DENABLE_POSHUKU_KEYWORDS=$(usex keywords)
