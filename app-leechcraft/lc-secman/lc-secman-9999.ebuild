@@ -1,7 +1,7 @@
 # Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 inherit leechcraft
 
@@ -12,7 +12,7 @@ KEYWORDS=""
 IUSE="crypt debug exposecontents"
 
 DEPEND="~app-leechcraft/lc-core-${PV}
-	dev-qt/qtwidgets:5
+	dev-qt/qtbase:6[widgets]
 	crypt? ( dev-libs/openssl:0 )
 "
 RDEPEND="${DEPEND}"
