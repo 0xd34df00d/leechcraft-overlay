@@ -8,7 +8,7 @@
 # 0xd34df00d@gmail.com
 # NightNord@niifaq.ru
 # @PROVIDES: cmake
-# @SUPPORTED_EAPIS: 7 8
+# @SUPPORTED_EAPIS: 8
 # @BLURB: Common functions and setup utilities for the LeechCraft app
 # @DESCRIPTION:
 # The leechcraft eclass contains a common set of functions and steps
@@ -22,7 +22,6 @@
 
 case ${EAPI:-0} in
 	8) inherit cmake ;;
-	7) inherit cmake ;;
 	*) die "EAPI not supported, bug ebuild mantainer" ;;
 esac
 
