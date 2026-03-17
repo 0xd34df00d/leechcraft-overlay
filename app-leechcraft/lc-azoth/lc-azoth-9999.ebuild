@@ -9,12 +9,12 @@ DESCRIPTION="Azoth, the modular IM client for LeechCraft"
 
 SLOT="0"
 KEYWORDS=""
-IUSE="debug doc +abbrev +acetamide +adiumstyles +autoidler +autopaste +birthdaynotifier
+IUSE="debug doc +abbrev +acetamide +autoidler +autopaste +birthdaynotifier
 	+chathistory +crypt +depester +embedmedia +herbicide +hili +isterique
 	+keeso +lastseen +latex +metacontacts +murm +nativeemoticons +otroid sarin
 	shx +spell +standardstyles +tracolor velvetbird +woodpecker +xmpp +xtazy"
 
-REQUIRED_USE="|| ( standardstyles adiumstyles )"
+REQUIRED_USE="|| ( standardstyles )"
 
 COMMON_DEPEND="
 	~app-leechcraft/lc-core-${PV}
@@ -46,7 +46,6 @@ src_configure() {
 		-DWITH_DOCS=$(usex doc)
 		-DENABLE_AZOTH_ABBREV=$(usex abbrev)
 		-DENABLE_AZOTH_ACETAMIDE=$(usex acetamide)
-		-DENABLE_AZOTH_ADIUMSTYLES=$(usex adiumstyles)
 		-DENABLE_AZOTH_AUTOIDLER=$(usex autoidler)
 		-DENABLE_AZOTH_AUTOPASTE=$(usex autopaste)
 		-DENABLE_AZOTH_BIRTHDAYNOTIFIER=$(usex birthdaynotifier)
