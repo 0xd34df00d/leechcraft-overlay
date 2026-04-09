@@ -62,7 +62,6 @@ RDEPEND="
 		~app-leechcraft/lc-summary-${PV}
 		~app-leechcraft/lc-tabsessmanager-${PV}
 		~app-leechcraft/lc-tabslist-${PV}
-		~app-leechcraft/lc-touchstreams-${PV}
 		~app-leechcraft/lc-tpi-${PV}
 		~app-leechcraft/lc-vrooby-${PV}
 		~app-leechcraft/lc-xtazy-${PV}
