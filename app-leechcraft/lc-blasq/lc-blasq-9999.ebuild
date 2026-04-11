@@ -9,7 +9,7 @@ DESCRIPTION="Cloud image storage services client (like Flickr or Picasa)"
 
 SLOT="0"
 KEYWORDS=""
-IUSE="debug +deathnote +rappor +spegnersi +vangog"
+IUSE="debug +deathnote +rappor +spegnersi"
 
 DEPEND="
 	~app-leechcraft/lc-core-${PV}
@@ -24,7 +24,6 @@ src_configure() {
 		-DENABLE_BLASQ_DEATHNOTE=$(usex deathnote)
 		-DENABLE_BLASQ_RAPPOR=$(usex rappor)
 		-DENABLE_BLASQ_SPEGNERSI=$(usex spegnersi)
-		-DENABLE_BLASQ_VANGOG=$(usex vangog)
 	)
 
 	cmake_src_configure
