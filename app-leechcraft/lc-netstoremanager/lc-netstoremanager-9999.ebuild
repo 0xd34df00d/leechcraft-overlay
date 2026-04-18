@@ -9,7 +9,7 @@ DESCRIPTION="LeechCraft plugin for supporting cloud data storages like Google Dr
 
 SLOT="0"
 KEYWORDS=""
-IUSE="+dropbox +googledrive"
+IUSE="+googledrive"
 
 DEPEND="~app-leechcraft/lc-core-${PV}
 	dev-libs/boost:=
@@ -19,7 +19,6 @@ RDEPEND="${DEPEND}"
 
 src_configure() {
 	local mycmakeargs=(
-		-DENABLE_NETSTOREMANAGER_DROPBOX=$(usex dropbox)
 		-DENABLE_NETSTOREMANAGER_GOOGLEDRIVE=$(usex googledrive)
 	)
 

@@ -10,7 +10,6 @@
 		<name>Proxy Maintainers</name>
 	</maintainer>
 	<use>
-		<flag name="dropbox">Build Dropbox storage backend</flag>
 		<flag name="googledrive">Build Google Drive storage backend</flag>
 	</use>
 </pkgmetadata>
